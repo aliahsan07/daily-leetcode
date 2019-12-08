@@ -1,0 +1,13 @@
+The approach employed is to work backwards
+Instead of multiplying by 2 or subtracting 1 from x, we can divide y by 2 when its even or add 1 to it
+Greedily dividing by 2 results in less number of operations 
+
+Comment from @jxbcalex:
+I would like to add some explanations for working backwards:
+If with subtraction and multiplication, the effect of earlier subtraction will be amplified by later multiplications, hence, greedily doing multiplication might not reach optimal solution as an additional early subtraction can have a huge effect.
+Whereas with addition and division, earlier addition will be diminished by later divisions. It is thus always better to do division wherever possible.
+
+
+for forward direction:
+https://leetcode.com/problems/broken-calculator/discuss/234791/C%2B%2B-solution-O(n)-time-and-O(1)-space-using-greedy-algorithm-(with-explanation)
+
