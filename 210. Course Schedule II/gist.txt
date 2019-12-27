@@ -1,0 +1,20 @@
+This warranted a topological sort on the graph created for courses and preReqs.
+
+Firstly I created a graph which was basically two dictionaries, one stored the preReqs for each course basically an adjacency list. 
+The other was to store the dependencies (the reverse operation of storing prereq)
+
+For generating an order of courses, the key insight is to find those with zero preReqs.
+Add that to the list and remove those edges for which that course was a prereq. 
+
+In the end all edges will be removed and all courses will be added one by one when they have no incoming edges.
+
+If there is a cycle I am checking if my output list has the same length as input list. If not, there is a cycle. 
+
+Must be a better way to check for cycle.
+
+Complexity:
+O(nodes + edges) for both space and time (perhaps)
+For space it might be some times O(V + E).
+
+There is another way of applying DFS over the graph.
+
