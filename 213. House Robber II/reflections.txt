@@ -1,0 +1,9 @@
+simple idea is to calculate the max of house robber on:
+1) list excluding first element
+2) list excluding last element
+
+And I treat the rob func as wrapper and provide arrays with one elem stripped
+
+alternate:
+https://leetcode.com/problems/house-robber-ii/discuss/59934/Simple-AC-solution-in-Java-in-O(n)-with-explanation
+
