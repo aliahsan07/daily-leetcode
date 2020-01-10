@@ -1,0 +1,8 @@
+Basis of this solution: https://youtu.be/AmlVSNBHzJg 
+
+The idea is as follows:
+Keep a hashmap of the sum with every index you traverse. At every index you check whether the sum - k is also present in
+the hashmap. If it is there are as many matches as the number of value against the sum - k key. If you think about it, 
+you're summing them up and determining whether sum at one point minus another makes it equal to k and when it does you 
+know there is a subset(s) of size curr_index - prev_index
+
